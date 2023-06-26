@@ -124,8 +124,8 @@
         <script type="text/javascript">
           // 設定開始（指定日の年月日を設定してください）
           var y = 2023; // 年
-          var m = 6; // 月
-          var d = 15; // 日
+          var m = 7; // 月
+          var d = 24; // 日
           // 設定終了
 
           var tgday = y + "/" + m + "/" + d;
@@ -135,17 +135,14 @@
           // 表示開始
           if(days > 0) {
           	document.write('2023年度前期の試験初日まであと <font size=5 color=red><b>' + days + '</b></font> 日です。');
-            document.write('嘘です。');
           }
           else if(days < -11) {
           	document.write('2023年度前期の試験・フィードバック期間は終了しました。お疲れさまでした。<br>過去問提供にご協力お願いします。');
-            document.write('嘘です。');
           }
           else {
           	days = Math.abs(days);
             days++;
-          	// document.write('2023年度前期の試験・フィードバック期間' + days + '日目です');
-            document.write('ただいま、6/27を含む14日のうちの' + days + '日目です');
+          	document.write('2023年度前期の試験・フィードバック期間' + days + '日目です');
           }
           // 表示終了
           document.write('<br>試験放送はここまでです。ご協力ありがとうございました。');
