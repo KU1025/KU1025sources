@@ -138,10 +138,10 @@
             document.write('嘘です。');
           }
           else if(days < -11) {
-          	days = Math.abs(days);
           	document.write('2023年度前期の試験・フィードバック期間は終了しました。お疲れさまでした。<br>過去問提供にご協力お願いします。');
           }
           else {
+          	days = Math.abs(days);
             days++;
           	// document.write('ただいま、2023年度前期の試験・フィードバック期間中です');
             document.write('ただいま、6/27を含む14日のうちの' + days + '日目です');
